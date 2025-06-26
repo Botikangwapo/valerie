@@ -343,6 +343,8 @@ body,html{
 svg {
     display:flex;
     text-aling: center;
+    align-items:center;
+    justify-content:center;
 }
 
 
