@@ -242,7 +242,7 @@ body,html{
   opacity: 0.9;
 }
 
-.button svg{
+.button{
   display: flex;
   align-items: center ;
   justify-content: cebter;
