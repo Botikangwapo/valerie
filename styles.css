@@ -245,7 +245,7 @@ body,html{
 .button{
   display: flex;
   align-items: center ;
-  justify-content: cebter;
+  justify-content: center;
   text-align: center;
   width: 150px;
   height: 40px;
@@ -341,7 +341,7 @@ body,html{
   height: 200px;
 }
 svg {
-    text-aling: center;
+    text-align: center;
 }
 
 
