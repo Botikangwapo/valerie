@@ -340,7 +340,9 @@ body,html{
    width: 200px;
   height: 200px;
 }
-
+svg {
+    text-aling: center;
+}
 
 
 /* media */
