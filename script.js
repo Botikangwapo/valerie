@@ -1,13 +1,7 @@
-  document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("menu-toggle");
-      const nav = document.querySelector("nav");
-      const close = document.getElementById("close-menu");
+const menuToggle = document.getElementById('menuToggle');
+const navbar = document.getElementById('navbar');
 
-      toggle.addEventListener("click", () => {
-        nav.classList.add("open");
-      });
-
-      close.addEventListener("click", () => {
-        nav.classList.remove("open");
-      });
-    });
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('open');
+  menuToggle.classList.toggle('open'); // add class to trigger animation
+});
