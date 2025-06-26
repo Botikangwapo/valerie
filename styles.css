@@ -227,8 +227,8 @@ ul li a {
 
 /* media */
 @media (max-width: 767px) {
-  .text-center{
-    padding-top: 4rem;
+  .left-text{
+    padding-top: 6rem;
   }
 
   .menu-toggle {
