@@ -270,7 +270,7 @@ ul li a {
   }
 
   nav.open .logo{
-    padding-bottom: 20rem;
+    padding-bottom: 40rem;
   }
 
   nav.open .navlinks{
@@ -285,7 +285,7 @@ ul li a {
 
   nav.open .close-menu{
     display: flex;
-     padding-bottom: 20rem;
+     padding-bottom: 40rem;
   }
   
   nav.open .close-menu {
