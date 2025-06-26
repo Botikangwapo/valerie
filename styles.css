@@ -307,11 +307,11 @@ ul li a {
 
   .imges
   {
-    width: 130%;
+    width: 90%;
   }
 
   .imges img{
-    width: 100%;
+    width: 90%;
     object-fit: cover;
   }
 
