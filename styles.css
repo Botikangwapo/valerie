@@ -151,7 +151,6 @@ body,html{
   height: 100%;
   background-color: rgb(56, 67, 160);
   top: 0;
-  padding-top: 5rem;;
   position: absolute;
   display: flex;
   align-items: center;
@@ -237,7 +236,6 @@ body,html{
   width: 100%;
   height: 600px;
   background: transparent;
-  margin-bottom:  15rem;
   opacity: 0.9;
 }
 
@@ -277,9 +275,6 @@ body,html{
 
 /* media */
 @media (max-width: 767px) {
-  .text-center{
-    padding-top: 4rem;
-  }
   .left-text{
     width: 100%;
     flex-direction: column;
