@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <nav>
+        <div class="logo">
+            <h2>valeriana</h2>
+        </div>
+
+        <ul class="navlinks">
+            <li><a href="">Home</a></li>
+             <li><a href="">About</a></li>
+              <li><a href="">Project</a></li>
+               <li><a href="">Contact</a></li>
+        </ul>
+         <div class="menu-toggle" id="menu-toggle">          
+             <i class="fa-solid fa-bars"></i>
+         </div>
+
+         <div class="close-menu" id="close-menu">   
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+    </nav>
+
+
+
+    
+        <div class="container">
+           <div class="left-text">
+            <div class="text-center">
+                <h1>Hello, im valerie mercado</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="button">
+                    <a href="">Download</a>
+                </div>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="imges">
+                <img src="valerie.jpg" alt="">
+            </div>
+           </div>
+        </div>
+    <script src="script.js"></script>
+     <script>
+       document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.querySelector("nav");
+      const close = document.getElementById("close-menu");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.add("open");
+      });
+
+      close.addEventListener("click", () => {
+        nav.classList.remove("open");
+      });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body,html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+  transition: opacity 1s ease-out;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid rgb(224, 69, 95); 
+  width: 60px;
+  border-radius:  50%;
+  height: 60px;
+  animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+*/
+
+/* Default nav state */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 10px 15px;
+  position: relative;
+  transition: height 0.6s ease;
+}
+
+/* Logo styling */
+.logo {
+  color: white;
+text-shadow: 0 0 7px rgba(257, 257, 257, 1);
+
+}
+
+h1{
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+
+}
+
+/* Nav links base */
+.navlinks {
+  display: flex;
+  gap: 30px;
+  transition: opacity 0.6s ease;
+  opacity: 1;
+ 
+}
+
+/* Nav links items */
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+/* Menu toggle (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(56, 67, 160);
+  top: 0;
+  padding-top: 5rem;;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: moveStars 100s linear infinite;
+  opacity: 1;
+  z-index: -1;
+  filter: invert(1) brightness(2)
+}
+
+.container::after {
+  animation-direction: reverse;
+  opacity: 1;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-500px, -500px);
+  }
+}
+
+
+.text-center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+
+
+.left-text{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 30px;
+  padding: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff5e7e; /* or any glow/pink/brand color */
+}
+
+
+.imges{
+  width: 100%;
+  background-color: transparent;
+  padding-bottom: 2rem;
+}
+
+.imges img{
+  width: 100%;
+  height: 600px;
+  background: transparent;
+  margin-bottom:  15rem;
+  opacity: 0.9;
+}
+
+.button{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: #ff6e6c;
+  border-radius: 10px;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.fa-bars{
+  font-size: 20px;
+  color:white;
+}
+
+.fa-xmark{
+  color: white;
+}
+
+
+
+.close-menu {
+  display: none;
+}
+
+
+
+/* media */
+@media (max-width: 767px) {
+  .text-center{
+    padding-top: 4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  nav{
+    background-color: rgba(56, 66, 160, 0); /* semi-transparent black */
+    backdrop-filter: blur(10px);    /* adds a blur for glass effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional subtle border */
+    overflow: hidden;
+  }
+
+  .navlinks {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 238, 238, 0); /* semi-transparent black */
+    backdrop-filter: blur(10px);    /* adds a blur for glass effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional subtle border */
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .navlinks li {
+    padding: 15px 0;
+  }
+   
+  nav.open {
+    height: 100vh;
+  }
+
+  nav.open .logo{
+    padding-bottom: 53rem;
+  }
+
+  nav.open .navlinks{
+    height: 100vh;
+    padding-top: 7rem;
+  }
+
+  nav.open .navlinks {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav.open .close-menu{
+    display: flex;
+     padding-bottom: 53rem;
+  }
+  
+  nav.open .close-menu {
+    display: flex;
+    text-align: center;
+   position: relative;
+  }
+  nav.open .menu-toggle{
+    display: none;
+  }
+    
+  .left-text{
+    width: 100%;
+    flex-direction: column;
+    padding-top: 14rem;
+    top: 0;
+    bottom: 0;
+  }
+
+  .imges
+  {
+    width: 130%;
+  }
+
+  .imges img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+@media (max-width:1024px) {
+    nav{
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .imges{
+      width: 100%;
+    }
+
+}
+
+@media (max-width:1600px){
+   nav{
+    width: 90%;
+    max-width: 1000px;
+   }
+
+   .text-center{
+
+     margin : 10px 15px
+   }
+}
