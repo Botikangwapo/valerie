@@ -278,7 +278,7 @@ body,html{
   .left-text{
     width: 100%;
     flex-direction: column;
-    padding-top: 56rem;
+    padding-top: 20rem;
     top: 0;
     bottom: 0;
   }
