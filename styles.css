@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
 }
 
 body,html{
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
 }
 /*
 #loader-wrapper {
@@ -108,8 +112,8 @@ body,html{
   
   /* Hamburger icon */
   .menu-icon {
-    width: 30px;
-    height: 22px;
+    width: 27px;
+    height: 20px;
     position: relative;
     cursor: pointer;
     display: none;
@@ -165,7 +169,7 @@ body,html{
   }
   
   .nav-links a:hover {
-    color: #ffd700;
+    color: #ff5e7e;
   }
 
   
@@ -180,8 +184,9 @@ body,html{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: -1;
+    z-index: -1;; 
   position: relative;
+  
 }
 
 .container::before,
@@ -276,7 +281,7 @@ body,html{
   text-align: center;
   width: 150px;
   height: 40px;
-  background-color: #ff6e6c;
+  background-color: #ff5e7e;
   border-radius: 10px;
   gap: 5px;
 }
@@ -314,63 +319,75 @@ svg{
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
 }
 
 
 
 .about-content {
-  max-width: 900px;
+  background: white;
+  max-width: 1400px;
   width: 100%;
-}
-
-.about-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.about-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-.box-card{
-  padding: 1rem 2rem;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  text-align: center;
+  flex-direction: column;
+  margin: 2rem  2rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: -50px; /* Adjust the value as you like */
+  z-index: 0;
+  border-radius: 5px;
+}
+
+
+
+.caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ flex-direction: column;
+}
+
+
+.box-card{
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 
 .card{
-  padding: 2rem 2rem;
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: auto;
   background-color: white;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ padding: 1rem;
+ gap: 10px;
 }
 
 .card h1{
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .images{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .images img{
-   width: 100px;
-  height: 100px;
+   width: 200px;
+  height: 200px;
 
 }
 
@@ -444,10 +461,24 @@ svg{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0rem 0.5rem;
   }
 
   ul{
     display: none;
+  }
+
+  .box-card{
+    width: 90%;
+  }
+   
+  .card{
+    padding: 1rem;
+    width: 90%;
+  }
+  
+  h1 p{
+    font-size:  30%;
   }
 
 }
