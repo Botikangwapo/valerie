@@ -312,7 +312,7 @@ svg{
 }
 
 .SECTION-ABOUT {
-  width: 100%;
+  width: auto;
   background-color: white;
   color: black;
   display: flex;
@@ -425,15 +425,15 @@ svg{
 
   .imges
   {
-    top: 77%;
+    top: 81%;
     height: auto;
     width: 100%;
     left: 45%;
   }
 
   .imges img{
-    max-width: 390px;
-    height: 500px;
+    max-width: 350px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
   }
