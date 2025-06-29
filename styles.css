@@ -49,23 +49,27 @@ body,html{
 /* Default nav state */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 20px;
+    left: 5%;
+    width: calc(100% - 80px); 
     height: 40px;
+    max-width: 1700px;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
     overflow: hidden;
     transition: height 0.6s ease;
     z-index: 999;
+    padding-top: 30px;
+    border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   }
-  
+
+
   .navbar.open {
     height: 100vh;
   }
@@ -75,7 +79,7 @@ body,html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 100%;
   }
 
   ul{
@@ -107,7 +111,7 @@ body,html{
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
   }
   
   /* Hamburger icon */
@@ -118,6 +122,7 @@ body,html{
     cursor: pointer;
     display: none;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
   }
   
@@ -178,7 +183,7 @@ body,html{
   width: 100%;
   height: 700px;
   top: 0;
-  padding-top: 3rem;
+  padding-top: 4rem;
   background-color: rgb(56, 67, 160);
   display: flex;
   align-items: center;
@@ -438,6 +443,10 @@ svg{
 
 /* media */
 @media (max-width: 767px) {
+  .navbar{
+      width: calc(97% - 80px);
+      left: 30px;
+  }
   .container{
     width: auto;
     height: 100%;
@@ -525,7 +534,7 @@ svg{
   }
 
   .about-content{
-    margin-top: -135px;
+    margin-top: -130px;
   }
 
 }
